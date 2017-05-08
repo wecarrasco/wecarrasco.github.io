@@ -6,6 +6,23 @@ h1{
 	font-size: 300%;
 }
 
+.card-content>h1{
+	color: black;
+	font-size: 150%;
+	margin-top: 0.1%;
+}
+
+.card-content>p{
+	text-align: left;
+	color: black;
+	font-size: 120%;
+	
+}
+
+
+
+
+
 h2{
 	/*margin-top: 7%;*/
 	font-family: 'Poppins', sans-serif;
