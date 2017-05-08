@@ -90,7 +90,9 @@ h2{
 }
 
 .icono{
-	width: 41px;
+	width: 60px;
+	margin-left: -10px;
+	margin-bottom: -10px;
 }
 
 .h1Derecha{
