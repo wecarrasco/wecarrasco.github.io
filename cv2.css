@@ -40,24 +40,22 @@ h2{
 	height: 669px;
 }
 
-#contenido-derecha{
+#contenido-derecha {
 	background-color: #ffffff ;
 	height: 669px;
-	display: flex;
-  align-items: center;
-  justify-content: center 
+
 }
 
 .foto-perfil{
 	position: relative;
-	width: 70%;
+	width: 15%;
 	display: block;
-	margin: 50% auto 10% auto;
-	border: 2px solid rgb(175,31,36);
+	margin: 5% auto 5% auto;
+	/*border: 2px solid rgb(175,31,36);*/
 }
 
 .iconos{
-	margin: auto auto;
+	margin: auto;
 	color: white;
 }
 
@@ -129,7 +127,20 @@ h2{
 }
 
 #bio{
+	position: relative;
+	display: block;
+	margin: 25% auto 0% auto;
+}
 
+.parallax-container {
+
+	height: 100%;
+}
+
+.parallax img { display: block; }
+
+.parallax-header{
+	color=#ffffff;
 }
 
 /*Rojo: rgb(175,31,36);
