@@ -143,5 +143,11 @@ h2{
 	color=#ffffff;
 }
 
+@media only screen and (min-width: 993px)
+materialize.min.css:6
+.row .col.offset-l3 {
+    margin-left: 27%;
+}
+
 /*Rojo: rgb(175,31,36);
   Gris: #3c3c3c;*/
