@@ -30,6 +30,10 @@ h1{
 	margin-top: 13%;
 }
 
+.exp-lab{
+	height: 100%;
+}
+
 h2{
 	/*margin-top: 7%;*/
 	font-family: 'Poppins', sans-serif;
@@ -53,23 +57,23 @@ h3{
 
 }
 @media only screen and (min-width: 992px){
-.foto-perfil{
-	position: relative;
-	width: 15%;
-	display: block;
-	margin: 5% auto 5% auto;
-	/*border: 2px solid rgb(175,31,36);*/
-}
+	.foto-perfil{
+		position: relative;
+		width: 15%;
+		display: block;
+		margin: 5% auto 5% auto;
+		/*border: 2px solid rgb(175,31,36);*/
+	}
 }
 
 @media only screen and (min-width: 1px) and (max-width: 991px){
-.foto-perfil{
-	position: relative;
-	width: 35%;
-	display: block;
-	margin: 12% auto 5% auto;
-	/*border: 2px solid rgb(175,31,36);*/
-}
+	.foto-perfil{
+		position: relative;
+		width: 35%;
+		display: block;
+		margin: 12% auto 5% auto;
+		/*border: 2px solid rgb(175,31,36);*/
+	}
 }
 
 .iconos{
@@ -170,7 +174,7 @@ h3{
 
 @media only screen and (min-width: 993)
 .row .col.offset-l3 {
-    margin-left: 27%;
+	margin-left: 27%;
 }
 
 /*Rojo: rgb(175,31,36);
