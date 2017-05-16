@@ -20,7 +20,7 @@
 
 	<!--Iconos-->
 	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"">
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -177,6 +177,56 @@
 		</div>
 	</div>
 
+	<div class="parallax-container codeParallax">
+		<div class="parallax"><img src="code2.png"></div>
+		<div>
+			<h1 class="white-text grad-text">Proyectos y Habilidades</h1>
+		</div>
+	</div>
+
+	
+	<div class="section white">
+		<h1><i class="fa fa-github" aria-hidden="true"></i> Mis Proyectos</h1>
+		<div class="carousel carousel-slider">
+			<div class="carousel-fixed-item center">
+				<a class="btn waves-effect white waves-green black-text darken-text-2" target="_blank" href="https://github.com/wecarrasco">Go to GitHub!</a>
+			</div>
+			<a class="carousel-item" href="https://github.com/wecarrasco/MultiUser-Text-Editor-RTCE" target="_blank"><img src="MUTE.png"></a>
+			<a class="carousel-item" href="https://github.com/wecarrasco"><img src="mail.png"></a>
+			<a class="carousel-item" href="https://github.com/wecarrasco/Elcaro"><img src="elcaro.png"></a>			
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<h1><i class="fa fa-code" aria-hidden="true"></i> Habilidades</h1>
+			<div class="col s12 m12 l12">
+				<div class="container">
+					<h3>Java</h3>
+					<div class="progress">
+						<div class="determinate barra" style="width: 70%"></div>
+					</div>
+					<h3>HTML</h3>
+					<div class="progress">
+						<div class="determinate barra" style="width: 50%"></div>
+					</div>
+					<h3>CSS3</h3>
+					<div class="progress">
+						<div class="determinate barra" style="width: 30%"></div>
+					</div>
+					<h3>Windows</h3>
+					<div class="progress">
+						<div class="determinate barra" style="width: 90%"></div>
+					</div>
+					<h3>Office</h3>
+					<div class="progress">
+						<div class="determinate barra" style="width: 100%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 </body>
 <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 <script>
@@ -185,6 +235,13 @@
 			$('.parallax').parallax();
 		});
 	})(jQuery);
+</script>
+
+<script>  (function($){
+	$(function(){
+		$('.carousel.carousel-slider').carousel({fullWidth: true});
+	});
+})(jQuery);
 </script>
 
 <script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
