@@ -1,209 +1,1040 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Walther Carrasco</title>
-	<link rel="shortcut icon" href="walle.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Walther Carrasco - Personal Curriculum CV" />
+  <title>Walther Carrasco - CV</title>
 
-	<!--Import materialize.css-->
-	<link rel="stylesheet" type="text/css" href="Materialize/css/materialize.min.css" media="screen, projection">
-	<!--Import Google Icon Font-->
-	<!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-	<!--Import personal css-->
-	<link rel="stylesheet" type="text/css" href="cv2.css">
-
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
-	<!--Iconos-->
-	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"">
-
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.0/simplebar.min.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 </head>
+
 <body>
-	
-	<div class="row">
-		<div class="col s12 m4 l4" id="perfil-izquierda">
-			<img class="foto-perfil circle responsive-img" src="foto.jpg">
-			<h1>Walther Carrasco</h1>
-			<h2>Web Developer</h2>
-		</div>
+  <div id="preloader">
+    <div class="outer">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+  </div>
 
+  <div class="site-wrapper">
+    <!-- mobile header -->
+    <div class="mobile-header py-2 px-3 mt-4">
+      <button class="menu-icon mr-2">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="index.html" class="logo"><img src="https://via.placeholder.com/70x70" alt="Bako Doe" /></a>
+      <a href="index.html" class="site-title dot ml-2">Walther Carrasco</a>
+    </div>
 
-		<div class="col s12 m8 l8" id="contenido-derecha">
+    <!-- HEADER -->
+    <header class="left float-left shadow-dark" id="header">
+      <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="header-inner d-flex align-items-start flex-column">
+        <a href="index.html"><img src="https://via.placeholder.com/70x70" alt="Bako Doe" /></a>
+        <a href="index.html" class="site-title dot mt-3">Walther Carrasco</a>
+        <span class="site-slogan">Fullstack Developer</span>
 
-			<h1>Sobre Mi</h1>
-			<p class="sobremi">Haxx0r ipsum mailbomb salt firewall Trojan horse else finally bypass packet chown warez foad semaphore. Gc xss brute force hello world afk stack cat protected /dev/null case epoch bubble sort. Lib stack trace recursively char big-endian system gcc crack kilo Leslie Lamport.</p>
+        <!-- navigation menu -->
+        <nav>
+          <ul class="vertical-menu scrollspy">
+            <li>
+              <a href="#home" class="active"><i class="icon-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="icon-user"></i>About</a>
+            </li>
+            <li>
+              <a href="#skills"><i class="icon-bulb"></i>Skills</a>
+            </li>
+            <li>
+              <a href="#services"><i class="icon-settings"></i>Services</a>
+            </li>
+            <li>
+              <a href="#experience"><i class="icon-briefcase"></i>Resume</a>
+            </li>
+            <li>
+              <a href="#otherwork"><i class="icon-star"></i>Other Work</a>
+            </li>
+            <li>
+              <a href="#education"><i class="icon-graduation"></i>Education</a>
+            </li>
+            <li>
+              <a href="#awards"><i class="icon-trophy"></i>Awards</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="icon-phone"></i>Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-			<p class="sobremi">Tera firewall hack the mainframe echo finally leapfrog mega hexadecimal. Mutex else bytes fopen interpreter do nak malloc ip crack foo alloc fail giga then protected mailbomb gurfle double rm -rf error loop cookie linux todo. Fork pragma sql mountain dew socket chown cache ban server python less win client shell false bubble sort public blob irc.</p>
-			<br>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col s12 m4 l4" id="barra-izquierda">
+        <!-- footer -->
+        <div class="footer mt-auto">
+          <!-- social icons -->
+          <ul class="social-icons list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/walecarrascom" target="_blank"><i class="icon-social-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/wecarrasco" target="_blank"><i class="icon-social-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/walthercarrasco/" target="_blank"><i
+                  class="icon-social-linkedin"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/wecarrasco" target="_blank"><i class="icon-social-github"></i></a>
+            </li>
 
-			<h1>Skills</h1>
-			<h3><img src="java.ico" class="icono"></img> Java</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 70%"></div>
-			</div>
-			<h3><i class="fa fa-html5" aria-hidden="true"></i> HTML</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 50%"></div>
-			</div>
-			<h3><i class="fa fa-css3" aria-hidden="true"></i> CSS3</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 30%"></div>
-			</div>
-			<h3><i class="fa fa-windows" aria-hidden="true"></i> Windows</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 90%"></div>
-			</div>
-			<h3><img src="blackoffice.png" class="icono"></img> Office</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 100%"></div>
-			</div>
-			
-			<h1>Aptitudes</h1>
-			<h3>Innovacion</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 80%"></div>
-			</div>
-			<h3>Atencion al Detalle</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 60%"></div>
-			</div>
-			<h3>Organizado</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 50%"></div>
-			</div>
-			<h3>Trabajo Bajo Presion</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 100%"></div>
-			</div>
-			<h1>Idiomas</h1>
-			<h3>Español</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 100%"></div>
-			</div>
-			<h3>Inglés</h3>
-			<div class="progress">
-				<div class="determinate barra" style="width: 80%"></div>
-			</div>
-		</div>
-		<div class="col s12 m8 l8" id="contenido-derecha2">
-			<h1 class="h1Derecha"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Educación</h1>
-			<div class="row">
-				<div class="col s12 m6 l4 center">
-					<div class="card">
-						<div class="card-image">
-							<img src="CEA.png">
-						</div>
-						<div class="card-content">
-							<h1>Primaria</h1>
-							<p><i class="fa fa-map-marker" aria-hidden="true"></i> Aldebarán</p>
-							<p><i class="fa fa-calendar" aria-hidden="true"></i> Noviembre 2008</p>
-						</div>
-					</div>	
-				</div>
-				<div class="col s12 m6 l4 center">
-					<div class="card">
-						<div class="card-image">
-							<img src="CEA.png">
-						</div>
-						<div class="card-content">
-							<h1>Secundaria</h1>
-							<p><i class="fa fa-map-marker" aria-hidden="true"></i> Aldebarán</p>
-							<p><i class="fa fa-graduation-cap" aria-hidden="true"></i>Bachiller en Ciencias y Letras</p>
-							<p><i class="fa fa-calendar" aria-hidden="true"></i> Noviembre 2012</p>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-						</div>
-					</div>	
-				</div>
-				<div class="col s12 m12 l4 center">
-					<div class="card">
-						<div class="card-image">
-							<img src="unitec.png">
-						</div>
-						<div class="card-content">
-							<h1>Universidad</h1>
-							<p><i class="fa fa-map-marker" aria-hidden="true"></i> Universidad Tecnológica Centroamericana</p>
-							<p><i class="fa fa-graduation-cap" aria-hidden="true"></i>Ing. Sistemas Computacionales</p>
-							<p><i class="fa fa-calendar" aria-hidden="true"></i> Enero, 2013 - Presente</p>
-						</div>
-					</div>
-				</div>
-			</div>
+    <main class="content float-right">
+      <!-- HERO -->
+      <section class="hero background parallax shadow-dark d-flex align-items-center" id="home">
+        <div class="cta mx-auto mt-2">
+          <h1 class="mt-0 mb-4">
+            I'm Walther Carrasco<span class="dot"></span>
+          </h1>
+          <p class="mt-0 mb-4">
+            I'm a Fullstack Developer with over 5 years experience in software
+            development. I'm a constant learner and focused on delivering
+            results and quality.
+          </p>
+          <a href="https://github.com/wecarrasco" target="_blank" class="btn btn-default btn-lg mr-3"><i
+              class="icon-social-github"></i>View Github</a>
+          <div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
+          <a href="#contact" class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Hire me</a>
+        </div>
+        <div class="overlay"></div>
+      </section>
 
-			<br><hr><br><br>
+      <!-- ABOUT -->
+      <section id="about" class="shadow-blue white-bg padding">
+        <h2 class="section-title">About Me</h2>
+        <div class="spacer" data-height="80"></div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="https://via.placeholder.com/150x150" alt="about" />
+          </div>
+          <div class="col-md-9">
+            <h3 class="mt-4 mt-md-0 mb-4">Hello,</h3>
+            <p class="mb-0">
+              I am Walther Carrasco, web developer from Tegucigalpa, Honduras.
+              I have rich experience building web applications, both frontend
+              and backend.
+            </p>
+            <div class="row my-4">
+              <div class="col-md-6">
+                <p class="mb-2">
+                  Name: <span class="text-dark">Walther Carrasco</span>
+                </p>
+                <p class="mb-0">
+                  Birthday: <span class="text-dark">25 August, 1995</span>
+                </p>
+              </div>
+              <div class="col-md-6 mt-2 mt-md-0 mt-sm-2">
+                <p class="mb-2">
+                  Location:
+                  <span class="text-dark">Tegucigalpa, Honduras</span>
+                </p>
+                <p class="mb-0">
+                  Email:
+                  <a class="text-dark" href="mailto:walther.e.carrasco@gmail.com">walther.e.carrasco@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-default mr-3"><i class="icon-cloud-download"></i>Download CV</a>
+            <a href="#contact" class="btn btn-alt mt-2 mt-md-0 mt-xs-2"><i class="icon-envelope"></i>Hire me</a>
+          </div>
+        </div>
+      </section>
 
-			<h1 class="h1Derecha"><i class="fa fa-building-o" aria-hidden="true"></i> Experiencia</h1>
-			<div class="row">
-				<div class="col s12 m12 l12 center">
-					<div class="card">
-						<div class="card-image">
-							<img src="LNO.png">
-						</div>
-						<div class="card-content">
-							<h1>Laureate Network Office</h1>
-							<p><i class="fa fa-building-o" aria-hidden="true"></i> Faculty Development Intern</p>
-							<p><i class="fa fa-calendar" aria-hidden="true"></i> Agosto, 2015 - Presente</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+      <!-- SKILLS -->
+      <section id="skills" class="shadow-blue white-bg padding">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="spacer" data-height="80"></div>
+        <h3 class="mt-4 mt-md-0 mb-4 section-subtitle">Languages</h3>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Javascript</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">TypeScript</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Python</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+        <h3 class="mt-4 mt-md-0 mb-4 section-subtitle">Frontend</h3>
+        <h4 class="mt-4 mt-md-0 mb-4">JS Frameworks</h4>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">React Js</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Redux</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Vue Js</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Vuex</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-4 mt-md-0 mb-4">Testing</h4>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Jest</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Mocha</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-4 mt-md-0 mb-4">CSS Frameworks</h4>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Reactstrap</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Bootstrap</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Material UI</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-4 mt-md-0 mb-4">Basics</h4>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">jQuery</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">HTML/CSS</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">SASS</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+        <h3 class="mt-4 mt-md-0 mb-4 section-subtitle">Backend</h3>
+        <h4 class="mt-4 mt-md-0 mb-4">General</h4>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Node Js</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Express Js</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Hapi Js</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-4 mt-md-0 mb-4">Database</h4>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">PostgreSQL</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">MySQL</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">MongoDB</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Sequelize</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-4 mt-md-0 mb-4">APIs</h4>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">REST</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">JSON APIs</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">OAuth / JWT</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+        <h3 class="mt-4 mt-md-0 mb-4 section-subtitle">Others</h3>
+        <div class=" row mt-5">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Git</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Docker</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">CI / CD</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Excel Macros</h4>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- SERVICES -->
+      <section id="services" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Services</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <div class="row">
+
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="icon-globe icon-simple"></i>
+              <h4 class="my-3">Web App Development</h4>
+              <p class="mb-0">Develop fast and good quality web apps using the latest technologies.</p>
+            </div>
+            <div class="spacer" data-height="20"></div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="icon-chemistry icon-simple"></i>
+              <h4 class="my-3">Backend Development</h4>
+              <p class="mb-0">Develop secure and mantainable backends for every use.</p>
+            </div>
+            <div class="spacer" data-height="20"></div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="icon-note icon-simple"></i>
+              <h4 class="my-3">Microsoft Excel Macros</h4>
+              <p class="mb-0">Develop excel macros to reduce repetitive tasks and make easier heavy work.</p>
+            </div>
+            <div class="spacer" data-height="20"></div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="icon-rocket icon-simple"></i>
+              <h4 class="my-3">SEO</h4>
+              <p class="mb-0">Take care of company positioning on Google.</p>
+            </div>
+            <div class="spacer d-md-none d-lg-none" data-height="20"></div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="icon-directions icon-simple"></i>
+              <h4 class="my-3">Google Analytics</h4>
+              <p class="mb-0">Set proper configuration of google analytics for data gathering.</p>
+            </div>
+            <div class="spacer d-md-none d-lg-none" data-height="20"></div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="icon-bubbles icon-simple"></i>
+              <h4 class="my-3">Support</h4>
+              <p class="mb-0">Develop mantainable software and give support if needed.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Work Experience</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <!-- timeline -->
+        <div class="timeline">
+          <div class="entry">
+            <div class="title">
+              <span>2018 - Present</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Acklen Avenue - Nashville, Tennessee</h4>
+              <h4 class="mt-0">Fullstack Developer</h4>
+              <p>At Acklen Avenue I have worked for numerous projects as a Fullstack Dev, all of them being web apps.
+                Some of them are:</p>
+              <ul>
+                <li><b>Developers Pair Metrics:</b> Created a application and formulas that returns the quality of the
+                  pair
+                  sessions of the devs of the company, so each tribe lead could detect anomalyes and make changes to
+                  improve the work of the developers.</li>
+                <li><b>Nashville Launchpad:</b> Created a web app for people management. The client initialy used an
+                  Excel
+                  sheet to manage all the people who the company was giving shelter so I improved the task by making a
+                  manager so the person in charge could easily manage all homeless people and cover all their
+                  necesities.</li>
+                <li><b>Testim - Cucumber Integration:</b> Created an integration between two services Testim and
+                  Cucumber to
+                  improve by 60% the time that a QA needed to test and report a new functionality developed.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2018 - Present</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Hondutronics - Tegucigalpa, Honduras</h4>
+              <h4 class="mt-0">CTO</h4>
+              <p>On 2018, 3 associates and me created Hondutronics, a startup where we give the user the facility of
+                starting a Smart Home. </p>
+              <p>I am in charge of the home page (<a href="https://www.hondutronics.com/"
+                  target="_blank">https://www.hondutronics.com/</a>) where we generate sells</p>
+              <p>I have been in charge of an practican from Universidad Católica and currently I'm in charge of one
+                developer. We are working on a solution so our clients can make savings in electrical costs.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2015 - 2018</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Laureate International Universities - Tegucigalpa, Honduras</h4>
+              <h4 class="mt-0">Faculty Development Intern</h4>
+              <p>During my 3 years at Laureate I worked on different projects all with the objective of provide to all
+                Faculty of different Universities material and courses so they could learn how to teach online classes.
+                <br /> Here I worked my soft skills like time management, creative thinking, teamwork, communication and
+                responsibility.<br />
+                Also worked on projects to help my coworkers to reduce their time to complete a task by automating some
+                of their tasks.<br />
+                My two most important projects where:
+              <ul>
+                <li><b>Renamer:</b> When teachers finish a course we always give them a certificate, but initially all
+                  the coordination was done in Excel
+                  and manually so I created a tool that organizes and creates the certificate of all teachers.
+                  Initially, these tasks took
+                  a week to complete. After the tool was made it was completed in an hour.</li>
+                <li><b>IPRs:</b>One of my tasks and from my coworkers as well was to grade the teachers of the courses.
+                  Initialy each one had their own
+                  template to complete this task and depending on the number of teachers this task could last up to one
+                  week. With the
+                  implementation of my tool made with macros we had an organized way to all complete the task and it
+                  could be completed in
+                  one day or two.</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+          <span class="timeline-line"></span>
+        </div>
+      </section>
+
+      <!-- Other Work -->
+      <section id="otherwork" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Other Work</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <!-- timeline -->
+        <div class="timeline">
+          <div class="entry">
+            <div class="title">
+              <span>2020</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Argos Home Page</h4>
+              <p>With my team we developed a Wordpress site for Argos. This included a home page, an presentation page
+                for each of their products and blogs.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2020</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Grupo Terra - Fundacion Terra</h4>
+              <p>Created a couple of games, both web based, for a social media campaign commemorating independence day.
+                The first game was a Memory game and the second a Trivia game.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2019</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Grupo Terra - Fundacion Terra</h4>
+              <p>Created a couple of games, both web based, for a social media campaign commemorating independence day.
+                The first game
+                was a Memory game and the second a Puzzle game.</p>
+            </div>
+          </div>
+          <span class="timeline-line"></span>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Education</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <!-- timeline -->
+        <div class="timeline">
+          <div class="entry">
+            <div class="title">
+              <span>2021</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">UNITEC (Universidad Tecnológica Centroamericana)</h4>
+              <h4 class="mt-0">Computer Systems Engineering</h4>
+              <p>Estimated graduation time: 4th semester of 2021</p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2019</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Vue Mastery</h4>
+              <p>Succesfully completed Intro to Vue 2, Real World Vue 2, Mastering Vuex and Vue 3 Forms courses.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2018, 3 Months</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">React and Redux Course</h4>
+              <h4 class="mt-0">Dante Dubon (Acklen Avenue)</h4>
+              <p>In this course, teached by Ing. Dante Dubon, I learned real world examples of React and thanks to this
+                I was accepted on Acklen Avenue.</p>
+              <p>Mentioned by Ing. Dante as his best student of the course.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2018</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">CSS Grid</h4>
+              <h4 class="mt-0">Wes Bos</h4>
+              <p>Completed the CSS Grid course taken to learn new techniques for making better responsive websites.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2017</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Modern React with Redux</h4>
+              <h4 class="mt-0">Stephen Grider</h4>
+              <p>Succesfully completed the course where I learned the updated version of React including Webpack and
+                Hooks.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">
+              <span>2001-2012</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Centro Escolar Aldebarán - Tegucigalpa, Honduras</h4>
+              <h4 class="mt-0">Bachelor of Science and Letters</h4>
+
+            </div>
+          </div>
+          <span class="timeline-line"></span>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section id="awards" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Awards and Events</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <!-- timeline -->
+        <div class="timeline">
+          <div class="entry">
+            <div class="title">
+              <span>2018</span>
+            </div>
+            <div class="body">
+              <h4 class="mt-0">Honduras Digital Challenge</h4>
+              <h4 class="mt-0">Second place</h4>
+              <p>Initially I went to the Honduras Digital Challenge without any project but with high desire of helping
+                other people who needs an developer to create an startup that could help people. </p>
+              <p>In here with 3 associates we created Hondutronics and for the challenge I created an Web App where I
+                could controll different smart devices and know their electrical consumption so we can generate saving
+                plans. Thanks to that and a marvelous team, we stablished Hondutronics after the Honduras Digital
+                Challenge.</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="entry">
+              <div class="title">
+                <span>2018</span>
+              </div>
+              <div class="body">
+                <h4 class="mt-0">Host from Startup Weekend</h4>
+                <p>This time I was'nt a participant, this was my first time as Host from a Startup Weekend where we had
+                  more than 100 participants at the event.</p>
+              </div>
+            </div>
+            <div class="entry">
+              <div class="title">
+                <span>2017</span>
+              </div>
+              <div class="body">
+                <h4 class="mt-0">Startup Weekend - Zamorano</h4>
+                <p>Participated on the Startup Weekend as developer for a project where the objective was create culture
+                  of growing
+                  vegetables on your own house or appartment. Also we wanted to help people who are allergic to the
+                  chemicals used
+                  on the vegetables at their cultivation.</p>
+                <p>This project was also going to help at public schools as a recreative activity.</p>
+              </div>
+            </div>
+            <div class="entry">
+              <div class="title">
+                <span>2015</span>
+              </div>
+              <div class="body">
+                <h4 class="mt-0">HackTegus Ideas for my Capital</h4>
+                <h4 class="mt-0">Third place</h4>
+                <p>During this hackathon, 3 friends and I created an app that could help the user to know if his current
+                  location is a danger zone or not. Also from there you could report to the police any crime, to the 911
+                  any emergency and to the firefighters any natural disaster.</p>
+              </div>
+            </div>
+            <span class="timeline-line"></span>
+          </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Testimonials</h3>
+        <div class="spacer" data-height="97"></div>
+
+        <div class="row testimonials-wrapper">
+
+          <div class="col-md-6">
+            <!-- testimonial item -->
+            <div class="testimonial-item">
+              <span class="symbol"><i class="icon-speech"></i></span>
+              <p>I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good
+                luck!
+              </p>
+              <div class="testimonial-details">
+                <div class="thumb">
+                  <img src="https://via.placeholder.com/40x40" alt="customer-name" />
+                </div>
+                <div class="info">
+                  <h4>Arturo Machado <a href="mailto:aemo611@yahoo.com"><i class="icon-envelope"
+                        style="color: #ff5959;"></i></a></h4>
+                  <span>Hondutronics CEO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- testimonial item -->
+            <div class="testimonial-item">
+              <span class="symbol"><i class="icon-speech"></i></span>
+              <p>I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good
+                luck!
+              </p>
+              <div class="testimonial-details">
+                <div class="thumb">
+                  <img src="https://via.placeholder.com/40x40" alt="customer-name" />
+                </div>
+                <div class="info">
+                  <h4>Renee Lorenzana <a href="mailto:aemo611@yahoo.com"><i class="icon-envelope"
+                        style="color: #ff5959;"></i></a></h4>
+                  <span>Walther's Boss at Laureate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Get in touch</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <div class="row">
+
+          <div class="col-md-4 mb-4 mb-md-0">
+            <!-- contact info -->
+            <div class="contact-info mb-5">
+              <i class="icon-phone"></i>
+              <div class="details">
+                <h5>Phone</h5>
+                <span>+504 96898905</span>
+              </div>
+            </div>
+            <div class="contact-info mb-5">
+              <i class="icon-envelope"></i>
+              <div class="details">
+                <h5>Email address</h5>
+                <span><a href="mailto:walther.e.carrasco@gmail.com">walther.e.carrasco@gmail.com</a></span>
+              </div>
+            </div>
+            <div class="contact-info">
+              <i class="icon-location-pin"></i>
+              <div class="details">
+                <h5>Location</h5>
+                <span>Col. Bella Oriente, Tegucigalpa, Honduras</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact-form" method="post" action="form/contact.php">
+
+              <div class="messages"></div>
+
+              <div class="row">
+                <div class="column col-md-6">
+                  <!-- Name input -->
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your name"
+                      required="required" data-error="Name is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+
+                <div class="column col-md-6">
+                  <!-- Email input -->
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="InputEmail" name="InputEmail"
+                      placeholder="Email address" required="required" data-error="Email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+
+                <div class="column col-md-12">
+                  <!-- Email input -->
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Subject"
+                      required="required" data-error="Subject is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+
+                <div class="column col-md-12">
+                  <!-- Message textarea -->
+                  <div class="form-group">
+                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Message"
+                      required="required" data-error="Message is required."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default"><i
+                  class="icon-paper-plane"></i>Send Message</button><!-- Send Button -->
+
+            </form>
+            <!-- Contact Form end -->
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- Go to top button -->
+  <a href="javascript:" id="return-to-top"><i class="icon-arrow-up"></i></a>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/infinite-scroll.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/validator.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.0/simplebar.min.js"></script>
 </body>
-<footer class="page-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col l12 s12">
-				<h3>Contacto</h3>
-				<div class="row">
-					<div class="col s4 m4 l5 center">
-						<a href="https://www.facebook.com/waemcame">
-							<i class="fa fa-facebook-official fa-4x iconos"></i>
-						</a>
-					</div>
-					<div class="col s4 m4 l2 center">
-						<a href="https://twitter.com/wecarrasco">
-							<i class="fa fa-twitter fa-4x iconos"></i>
-						</a>
-					</div>
-					<div class="col s4 m4 l5 center">
-						<a href="https://github.com/wecarrasco">
-							<i class="fa fa-github fa-4x iconos"></i>
-						</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s3 m4 l3 center">
-						<a href="https://plus.google.com/u/0/103878363605949937129">
-						<i class="fa fa-google-plus fa-4x iconos"></i>
-						</a>
-					</div>
-					<div class="col s3 m4 l3 center">
-						<a href="https://www.instagram.com/wecarrasco/">
-							<i class="fa fa-instagram fa-4x iconos"></i>
-						</a>
-					</div>
-					<div class="col s3 m4 l3 center">
-						<a href="https://www.youtube.com/user/MrWaemcame">
-							<i class="fa fa-youtube-play fa-4x iconos"></i>
-						</a>
-					</div>
-					<div class="col s3 m12 l3 center">
-						<a href="https://www.linkedin.com/in/walther-carrasco-4b056b129/">
-							<i class="fa fa-linkedin-square fa-4x iconos"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
+
 </html>
