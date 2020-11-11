@@ -16,6 +16,7 @@
     media="all" />
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,8 @@
         <span></span>
         <span></span>
       </button>
-      <a href="index.html" class="logo"><img src="https://via.placeholder.com/70x70" alt="Bako Doe" /></a>
+      <a href="index.html" class="logo"><img class="fotoPerfil" src="./images/profile70x70.jpg"
+          alt="Walther Carrasco Foto" /></a>
       <a href="index.html" class="site-title dot ml-2">Walther Carrasco</a>
     </div>
 
@@ -46,7 +48,7 @@
         <span aria-hidden="true">&times;</span>
       </button>
       <div class="header-inner d-flex align-items-start flex-column">
-        <a href="index.html"><img src="https://via.placeholder.com/70x70" alt="Bako Doe" /></a>
+        <a href="index.html"><img class="fotoPerfil" src="./images/profile70x70.jpg" alt="Walther Carrasco Foto" /></a>
         <a href="index.html" class="site-title dot mt-3">Walther Carrasco</a>
         <span class="site-slogan">Fullstack Developer</span>
 
@@ -132,19 +134,20 @@
         <div class="spacer" data-height="80"></div>
         <div class="row">
           <div class="col-md-3">
-            <img src="https://via.placeholder.com/150x150" alt="about" />
+            <img class="fotoPerfil" src="./images/profile70x70.jpg" alt="about" />
           </div>
           <div class="col-md-9">
             <h3 class="mt-4 mt-md-0 mb-4">Hello,</h3>
             <p class="mb-0">
               I am Walther Carrasco, web developer from Tegucigalpa, Honduras.
               I have rich experience building web applications, both frontend
-              and backend.
+              and backend. I'm very passionate about web development, also entrepreneurship having a startup and also
+              passionate about data science.
             </p>
             <div class="row my-4">
               <div class="col-md-6">
                 <p class="mb-2">
-                  Name: <span class="text-dark">Walther Carrasco</span>
+                  Name: <span class="text-dark">Walther Emilio Carrasco Mejia</span>
                 </p>
                 <p class="mb-0">
                   Birthday: <span class="text-dark">25 August, 1995</span>
@@ -634,9 +637,9 @@
               <p>At Acklen Avenue I have worked for numerous projects as a Fullstack Dev, all of them being web apps.
                 Some of them are:</p>
               <ul>
-                <li><b>Developers Pair Metrics:</b> Created a application and formulas that returns the quality of the
+                <li><b>Developers Pair Metrics:</b> Created an application and formulas that return the quality of the
                   pair
-                  sessions of the devs of the company, so each tribe lead could detect anomalyes and make changes to
+                  sessions of the devs of the company, so each tribe lead could detect anomalies and make changes to
                   improve the work of the developers.</li>
                 <li><b>Nashville Launchpad:</b> Created a web app for people management. The client initialy used an
                   Excel
@@ -909,17 +912,23 @@
             <!-- testimonial item -->
             <div class="testimonial-item">
               <span class="symbol"><i class="icon-speech"></i></span>
-              <p>I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good
-                luck!
+              <p>I worked with Walther for 3 years at Laureate International Universities. Him and I worked closely
+                together during this
+                time and I was able to witness his exceptional skills in computer systems and interpersonal relations.
+                He excelled in
+                his role as Faculty Development intern, exhibing a high level of productivity and a problem solving
+                mindset. I am very
+                confident that Walther has the inteligence, work ethics and profesional skills to add value wherever he
+                works.
               </p>
               <div class="testimonial-details">
                 <div class="thumb">
-                  <img src="https://via.placeholder.com/40x40" alt="customer-name" />
+                  <img src="./images/renee.jpg" alt="customer-name" />
                 </div>
                 <div class="info">
-                  <h4>Renee Lorenzana <a href="mailto:aemo611@yahoo.com"><i class="icon-envelope"
+                  <h4>Renee Lorenzana <a href="mailto:lorenzana.renee@gmail.com"><i class="icon-envelope"
                         style="color: #ff5959;"></i></a></h4>
-                  <span>Walther's Boss at Laureate</span>
+                  <span>Instructors Management Administrator</span>
                 </div>
               </div>
             </div>
@@ -1003,9 +1012,10 @@
                 </div>
               </div>
 
-              <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default"><i
-                  class="icon-paper-plane"></i>Send Message</button><!-- Send Button -->
-
+              <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default g-recaptcha"
+                data-sitekey="6LfnuuEZAAAAAIG-7byDc4hHzW1H0rHsZDejZGUz" data-callback="onSubmit" data-action="submit">
+                <i class="icon-paper-plane"></i>Send Message
+              </button><!-- Send Button -->
             </form>
             <!-- Contact Form end -->
           </div>
@@ -1035,6 +1045,11 @@
   <script src="js/validator.js"></script>
   <script src="js/custom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.0/simplebar.min.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("contact-form").submit();
+    }
+  </script>
 </body>
 
 </html>

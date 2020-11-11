@@ -227,7 +227,8 @@ header.left {
   background: #3d5a80;
   border-radius: 20px;
   min-height: 620px;
-  max-height: 620px;
+  /* max-height: 620px; */
+  height: 84%;
   top: 50px;
   overflow: hidden;
   position: fixed;
@@ -355,6 +356,10 @@ header .vertical-menu li a.active:before {
 header .copyright {
   font-size: 12px;
   opacity: 0.7;
+}
+
+.fotoPerfil {
+  border-radius: 20px;
 }
 
 .mobile-header {
@@ -1708,6 +1713,7 @@ section.padding-60 {
     -ms-transform: translateX(-380px);
     -o-transform: translateX(-380px);
     transform: translateX(-380px);
+    height: 91vh;
   }
   header.left.open {
     -webkit-transform: translateX(0);
