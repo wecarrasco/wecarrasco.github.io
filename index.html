@@ -589,7 +589,7 @@
             <div class="service-item text-center">
               <i class="icon-chemistry icon-simple"></i>
               <h4 class="my-3">Backend Development</h4>
-              <p class="mb-0">Develop secure and mantainable backends for every use.</p>
+              <p class="mb-0">Develop secure and maintainable backends for every use.</p>
             </div>
             <div class="spacer" data-height="20"></div>
           </div>
@@ -629,7 +629,7 @@
             <div class="service-item text-center">
               <i class="icon-bubbles icon-simple"></i>
               <h4 class="my-3">Support</h4>
-              <p class="mb-0">Develop mantainable software and give support if needed.</p>
+              <p class="mb-0">Develop maintainable software and give support if needed.</p>
             </div>
           </div>
 
@@ -657,11 +657,11 @@
                   pair
                   sessions of the devs of the company, so each tribe lead could detect anomalies and make changes to
                   improve the work of the developers.</li>
-                <li><b>Nashville Launchpad:</b> Created a web app for people management. The client initialy used an
+                <li><b>Nashville Launchpad:</b> Created a web app for people management. The client initially used an
                   Excel
                   sheet to manage all the people who the company was giving shelter so I improved the task by making a
                   manager so the person in charge could easily manage all homeless people and cover all their
-                  necesities.</li>
+                  necessities.</li>
                 <li><b>Testim - Cucumber Integration:</b> Created an integration between two services Testim and
                   Cucumber to
                   improve by 60% the time that a QA needed to test and report a new functionality developed.</li>
@@ -679,7 +679,7 @@
                 starting a Smart Home. </p>
               <p>I am in charge of the home page (<a href="https://www.hondutronics.com/"
                   target="_blank">https://www.hondutronics.com/</a>) where we generate sells</p>
-              <p>I have been in charge of an practican from Universidad Católica and currently I'm in charge of one
+              <p>I have been in charge of an intern from Universidad Católica and currently I'm in charge of one
                 developer. We are working on a solution so our clients can make savings in electrical costs.</p>
             </div>
           </div>
@@ -794,7 +794,7 @@
             <div class="body">
               <h4 class="mt-0">React and Redux Course</h4>
               <h4 class="mt-0">Dante Dubon (Acklen Avenue)</h4>
-              <p>In this course, teached by Ing. Dante Dubon, I learned real world examples of React and thanks to this
+              <p>In this course, taught by Ing. Dante Dubon, I learned real world examples of React and thanks to this
                 I was accepted on Acklen Avenue.</p>
               <p>Mentioned by Ing. Dante as his best student of the course.</p>
             </div>
@@ -851,8 +851,8 @@
               <p>Initially I went to the Honduras Digital Challenge without any project but with high desire of helping
                 other people who needs an developer to create an startup that could help people. </p>
               <p>In here with 3 associates we created Hondutronics and for the challenge I created an Web App where I
-                could controll different smart devices and know their electrical consumption so we can generate saving
-                plans. Thanks to that and a marvelous team, we stablished Hondutronics after the Honduras Digital
+                could control different smart devices and know their electrical consumption so we can generate saving
+                plans. Thanks to that and a marvelous team, we established Hondutronics after the Honduras Digital
                 Challenge.</p>
             </div>
           </div>
@@ -875,10 +875,10 @@
                 <h4 class="mt-0">Startup Weekend - Zamorano</h4>
                 <p>Participated on the Startup Weekend as developer for a project where the objective was create culture
                   of growing
-                  vegetables on your own house or appartment. Also we wanted to help people who are allergic to the
+                  vegetables on your own house or apartment. Also we wanted to help people who are allergic to the
                   chemicals used
                   on the vegetables at their cultivation.</p>
-                <p>This project was also going to help at public schools as a recreative activity.</p>
+                <p>This project was also going to help at public schools as a recreational activity.</p>
               </div>
             </div>
             <div class="entry">
@@ -932,9 +932,10 @@
                 together during this
                 time and I was able to witness his exceptional skills in computer systems and interpersonal relations.
                 He excelled in
-                his role as Faculty Development intern, exhibing a high level of productivity and a problem solving
+                his role as Faculty Development intern, exhibiting a high level of productivity and a problem solving
                 mindset. I am very
-                confident that Walther has the inteligence, work ethics and profesional skills to add value wherever he
+                confident that Walther has the intelligence, work ethics and professional skills to add value wherever
+                he
                 works.
               </p>
               <div class="testimonial-details">
@@ -1068,23 +1069,30 @@
       const subject = document.getElementById('InputSubject').value;
       const email = document.getElementById('InputEmail').value;
       const message = document.getElementById('InputMessage').value;
-      // these IDs from the previous steps
-      emailjs.send('Gmail', 'template_wfwup2n', { subject, from_name: name, from_email: email, message })
-        .then(function () {
-          Swal.fire({
-            icon: 'success',
-            title: 'Thank you for contacting me. I will be in touch with you very soon.',
-            showConfirmButton: false,
-            timer: 3500
-          }).then(() => {
-            document.getElementById('InputName').value = "";
-            document.getElementById('InputSubject').value = "";
-            document.getElementById('InputEmail').value = "";
-            document.getElementById('InputMessage').value = "";
-          })
-        }, function (error) {
-          console.log('FAILED...', error);
-        });
+      if (name !== "" && subject !== "" && email !== "" && message !== "") {
+        emailjs.send('Gmail', 'template_wfwup2n', { subject, from_name: name, from_email: email, message })
+          .then(function () {
+            Swal.fire({
+              icon: 'success',
+              title: 'Thank you for contacting me. I will be in touch with you very soon.',
+              showConfirmButton: false,
+              timer: 3500
+            }).then(() => {
+              document.getElementById('InputName').value = "";
+              document.getElementById('InputSubject').value = "";
+              document.getElementById('InputEmail').value = "";
+              document.getElementById('InputMessage').value = "";
+            })
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Please fill all the fields.'
+        })
+      }
 
     }
   </script>
