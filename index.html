@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
   <script src="https://www.google.com/recaptcha/api.js"></script>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRWZK57G6Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,6 +26,13 @@
 
     gtag('config', 'G-XRWZK57G6Q');
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>(function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init('user_iIQw8LwjuehThb3YUGy5o');
+    })();</script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body>
@@ -978,7 +986,7 @@
 
           <div class="col-md-8">
             <!-- Contact Form -->
-            <form id="contact-form" class="contact-form" method="post" action="form/contact.php">
+            <form name="contact-form" id="contact-form" class="contact-form" method="post">
 
               <div class="messages"></div>
 
@@ -1020,8 +1028,9 @@
                 </div>
               </div>
 
-              <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default g-recaptcha"
-                data-sitekey="6LfnuuEZAAAAAIG-7byDc4hHzW1H0rHsZDejZGUz" data-callback="onSubmit" data-action="submit">
+              <button type="submit" value="Send" class="btn btn-default g-recaptcha"
+                data-sitekey="6LfnuuEZAAAAAIG-7byDc4hHzW1H0rHsZDejZGUz" data-callback="onSubmit" data-action="submit"
+                onclick="onSubmit()">
                 <i class="icon-paper-plane"></i>Send Message
               </button><!-- Send Button -->
             </form>
@@ -1054,8 +1063,29 @@
   <script src="js/custom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.0/simplebar.min.js"></script>
   <script>
-    function onSubmit(token) {
-      document.getElementById("contact-form").submit();
+    function onSubmit() {
+      const name = document.getElementById('InputName').value;
+      const subject = document.getElementById('InputSubject').value;
+      const email = document.getElementById('InputEmail').value;
+      const message = document.getElementById('InputMessage').value;
+      // these IDs from the previous steps
+      emailjs.send('Gmail', 'template_wfwup2n', { subject, from_name: name, from_email: email, message })
+        .then(function () {
+          Swal.fire({
+            icon: 'success',
+            title: 'Thank you for contacting me. I will be in touch with you very soon.',
+            showConfirmButton: false,
+            timer: 3500
+          }).then(() => {
+            document.getElementById('InputName').value = "";
+            document.getElementById('InputSubject').value = "";
+            document.getElementById('InputEmail').value = "";
+            document.getElementById('InputMessage').value = "";
+          })
+        }, function (error) {
+          console.log('FAILED...', error);
+        });
+
     }
   </script>
 </body>
