@@ -388,7 +388,7 @@ header .copyright {
 }
 .mobile-header .site-title {
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 }
 .mobile-header .site-title.dot:after {
@@ -465,7 +465,7 @@ main.content.push {
 .hero .cta h1 {
   color: #fff;
   font-size: 60px;
-  line-height: 0.7;
+  line-height: 1;
 }
 .hero .cta h1 .dot:after {
   content: '';
