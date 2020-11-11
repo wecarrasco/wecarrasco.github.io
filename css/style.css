@@ -5,7 +5,7 @@
 /*=================================================================*/
 body {
   color: #888;
-  background-color: #e0fbfc;
+  /* background-color: #e0fbfc; */
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.7;
@@ -219,6 +219,27 @@ pre {
   padding-left: 10px;
 }
 
+.slick-track {
+  width: unset !important;
+}
+
+/*=================================================================*/
+/*                      ABOUT                              
+/*=================================================================*/
+
+#about {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  background: #1d3557;
+  color: white !important;
+}
+
+#about h1,
+#about h3,
+#about a {
+  color: white !important;
+}
+
 /*=================================================================*/
 /*                      HEADER                              
 /*=================================================================*/
@@ -360,6 +381,9 @@ header .copyright {
 
 .fotoPerfil {
   border-radius: 20px;
+  width: 200px;
+  float: left;
+  margin-right: 16px;
 }
 
 .mobile-header {
@@ -433,9 +457,9 @@ header .copyright {
 }
 
 main.content {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 50px;
-  width: 875px;
+  width: 70vw;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -444,6 +468,9 @@ main.content {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0px);
 }
 main.content.push {
   -webkit-transform: translateX(295px);
@@ -454,18 +481,20 @@ main.content.push {
 }
 
 .hero {
-  height: 620px;
+  height: 350px;
   margin-top: 0;
 }
 .hero .cta {
   color: #fff;
-  max-width: 600px;
+  /* max-width: 600px; */
   z-index: 1;
 }
 .hero .cta h1 {
   color: #fff;
   font-size: 60px;
   line-height: 1;
+  width: 88%;
+  margin-top: 30px !important;
 }
 .hero .cta h1 .dot:after {
   content: '';
@@ -490,14 +519,120 @@ section {
 section.white-bg {
   background: #fff;
 }
+section.blue-bg {
+  background: #e0fbfc;
+}
 section.padding {
-  padding: 80px 50px;
+  padding: 50px 50px;
 }
 section.padding-50 {
   padding: 50px;
 }
 section.padding-60 {
   padding: 60px 50px;
+}
+
+#skills {
+  margin-bottom: 120px !important;
+  background: #1d3557 !important;
+  color: #e6e6e6 !important;
+}
+
+#skills h2,
+#skills h3,
+#skills h4,
+#skills p {
+  color: white !important;
+}
+#skills2 {
+  margin-bottom: 220px !important;
+  background: #1d3557 !important;
+  color: #e6e6e6 !important;
+}
+
+#skills2 h2,
+#skills2 h3,
+#skills2 h4,
+#skills2 p {
+  color: white !important;
+}
+#services {
+  /* margin-bottom: 100px !important; */
+  background: #1d3557 !important;
+  color: #e6e6e6 !important;
+}
+
+#services h2,
+#services h3,
+#services h4,
+#services p {
+  color: white !important;
+}
+
+#experience {
+  /* margin-bottom: 220px !important; */
+  background: #1d3557 !important;
+  color: #e6e6e6 !important;
+}
+
+#experience h2,
+#experience h3,
+#experience h4,
+#experience a,
+#experience p {
+  color: white !important;
+}
+#otherwork {
+  /* margin-bottom: 220px !important; */
+  background: #1d3557 !important;
+  color: #e6e6e6 !important;
+}
+
+#otherwork h2,
+#otherwork h3,
+#otherwork h4,
+#otherwork a,
+#otherwork p {
+  color: white !important;
+}
+#education {
+  /* margin-bottom: 220px !important; */
+  background: #1d3557 !important;
+  color: #e6e6e6 !important;
+}
+
+#education h2,
+#education h3,
+#education h4,
+#education a,
+#education p {
+  color: white !important;
+}
+#awards {
+  /* margin-bottom: 220px !important; */
+  background: #1d3557 !important;
+  color: #e6e6e6 !important;
+}
+
+#awards h2,
+#awards h3,
+#awards h4,
+#awards a,
+#awards p {
+  color: white !important;
+}
+#testimonials {
+  /* margin-bottom: 220px !important; */
+  background: #1d3557 !important;
+  color: #e6e6e6 !important;
+}
+
+#testimonials h2,
+#testimonials h3,
+#testimonials h4,
+#testimonials a,
+#testimonials p {
+  color: white !important;
 }
 
 .section-title {
@@ -549,6 +684,7 @@ section.padding-60 {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  height: 280px;
 }
 .service-item h4,
 .service-item i {
@@ -571,7 +707,7 @@ section.padding-60 {
 
 .timeline {
   position: relative;
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
 .timeline-line {
