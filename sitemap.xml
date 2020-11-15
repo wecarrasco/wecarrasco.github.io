@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https://carrasco.tech/</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/index.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#home</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#about</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#skills</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#services</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#experience</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#otherwork</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#education</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#awards</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/#contact</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/mailto:walther.e.carrasco@gmail.com</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/./pdf/walthercarrasco-cv.pdf</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/mailto:aemo611@yahoo.com</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/mailto:lorenzana.renee@gmail.com</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://carrasco.tech/javascript:</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+	</urlset>
+
