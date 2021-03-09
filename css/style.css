@@ -636,7 +636,19 @@ section.padding-60 {
 }
 
 .mb-extra {
-  margin: 0 0 14.5em !important;
+  margin: 0 0 15em !important;
+}
+
+.mb-medium {
+  margin: 0 0 11em !important;
+}
+
+.mb-small {
+  margin: 0 0 5em !important;
+}
+
+.mb-xsmall {
+  margin: 0 0 2em !important;
 }
 
 .section-title {
